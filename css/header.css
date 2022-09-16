@@ -1,0 +1,42 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.header .logo{
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.header .logo img{
+    display: block;
+    width: 200px;
+}
+.nav__menu .menu__item{
+    display: block;
+    text-align: center;
+}
+.nav__menu .menu__item:not(:last-child){
+    margin-bottom: 3px;
+}
+.header .nav__menu{
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 600px){
+    .header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .header .logo{
+        margin-bottom: 0;
+    }
+}
+@media (min-width: 650px){
+    .header .nav__menu{
+        width: 35vw;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
